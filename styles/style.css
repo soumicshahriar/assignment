@@ -1,0 +1,273 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* ---------------
+nav bar styles
+------------------
+ */
+nav{
+  background: rgba(255, 144, 14, 0.1);
+  height: fit-content;
+  width: 100%;
+}
+.logo{
+  color: #131313;
+  font-weight: 700;
+  font-size: 45px;
+  padding: 0 100px;
+}
+nav ul{
+  float: right;
+  margin-right: 240px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 7px;
+}
+nav ul li a{
+  color:black;
+  font-size: 15px;
+  padding: 5px;
+}
+.active, a:hover{
+  background-color: rgb(42, 50, 44);
+}
+.checkbtn{
+  font-size: 20px;
+  color: black;
+  line-height: 80px;
+  margin-left: 20px;
+}
+#check{
+  display: none;
+}
+
+
+/* ------------
+banner page
+--------------- */
+  .banner-sec{
+  margin-top: 40px;
+  text-align: center;
+}
+.banner-title{
+  font-weight: 700;
+  font-size: 64px;
+}
+.banner-des{
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272; 
+  margin-top: 10px;
+}
+.explore-btn{
+  font-weight: 600;
+  font-size: 20px;
+  height: 64px;
+  color: white;
+  background: #FF900E;
+  border-radius: 8px;
+  border: none;
+  padding: 21px 25px;
+  margin-top: 24px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.banner{
+  display: grid;
+  place-items: center;
+ }
+ .banner img{
+   width: 100%;
+   margin-bottom: 45px;
+ }
+
+ /* --------------
+ main section style
+ ------------------- */
+.main-top{
+  margin-top: 85px;
+  display: flex;
+ }
+.main-top-img{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-left: 300px;
+  row-gap: 24px;
+  column-gap: 24px;
+ }
+ 
+.main-top-detail{
+  margin-left: 73px;
+  margin-top: 287px;
+ }
+.main-top-title{
+  font-weight: 500;
+  font-size: 45px;
+ }
+.text-1{
+  color: #727272;
+ }
+.text-2{
+  color: #131313;
+  font-weight: bold;
+ }
+.text-3{
+  color: #FF900E;
+  font-weight: bold;
+ }
+.main-top-des{
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
+  margin-top: 24px;
+ }
+ /* ------------
+ main bottom style
+ ----------------- */
+.main-bottom{
+  display: flex;
+  margin-top: 130px;
+  margin-left: 240px;
+  column-gap: 10%;
+}
+.bottom-title{
+  font-weight: 700;
+  font-size: 45px;
+  color: #131313;
+  margin-bottom: 24px;
+  border-left: 5px solid #FF900E;
+  padding: 10px;
+  
+}
+.bottom-des{
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
+  margin-bottom: 30px;
+}
+.sub-sec{
+  background: #FFFFFF;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 25px 30px;
+}
+.bottom-sub{
+  font-weight: 600;
+  font-size: 20px;
+  color: #131313;
+  margin-bottom: 5px;
+}
+.sub-des{
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
+}
+.bottom-right img{
+  width: 600px;
+  height: 750px;
+}
+.experience-time{
+  background: #FF900E;
+  border-radius: 8px;
+  border: none;
+  width: 300px;
+  height: 180px;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 25px;
+}
+.experience-time:hover{
+  color: aqua;
+  background: #727272;
+}
+.time-bold{
+  font-weight: 700;
+  font-size: 65px;
+}
+.bottom-btn{
+  margin: -100px -100px;
+}
+
+/* ---------------------
+Footer section style
+---------------------- */
+.footer-upper-sec{
+
+}
+.upper-title{
+
+}
+.upper-des{
+
+}
+.icons{
+
+}
+.number{
+
+}
+.icon-des{
+  
+}
+
+ 
+
+ @media screen and (max-width: 768px) {
+  ul{
+   position: fixed;
+   width: 100%;
+   height:fit-content;
+   background-color: rgb(93, 99, 87);
+   text-align: center;
+   left: -100%;
+   transition:all .5s;
+  }
+  nav ul li{
+   display: block;
+  }
+  #check:checked ~ ul{
+   left: 0;
+  }
+  .logo{
+    font-size: 30px;
+    float: right;
+   }
+   .main-top{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+   }
+   .main-top-img{
+    grid-template-columns: repeat(1,1fr);
+    width: 100%;
+    margin-left:5%;
+   }
+   .main-top-detail{
+    margin-top: 7%;
+    margin-left: 7PX;
+   }
+   .main-bottom{
+    display: flex;
+    flex-direction: column; 
+    margin-left: 0;
+  }
+  .bottom-right img{
+    width: 100%;
+    height: 60vh; 
+  }
+  .experience-time{
+    
+    font-size: 7px;
+  }
+  .bottom-btn{
+    width: 100%;
+  }
+}
