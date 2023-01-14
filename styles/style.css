@@ -4,6 +4,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  
 }
 
 /* ---------------
@@ -36,7 +37,7 @@ nav ul li a{
   padding: 5px;
 }
 .active, a:hover{
-  background-color: rgb(42, 50, 44);
+  background-color: rgb(93, 219, 125);
 }
 .checkbtn{
   font-size: 20px;
@@ -200,25 +201,95 @@ banner page
 /* ---------------------
 Footer section style
 ---------------------- */
-.footer-upper-sec{
-
+.footer{
+  margin-top: 130px;
+  margin-left: 240px;
 }
-.upper-title{
 
+.upper-title{
+  font-weight: 700;
+  font-size: 45px;
+  color: #131313;
+  margin-bottom: 24px;
 }
 .upper-des{
-
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
 }
 .icons{
-
-}
-.number{
-
-}
-.icon-des{
+  margin-top: 100px;
+  margin-left:100px;
+  display: flex;
   
 }
+.icon{
+  width: 241.83px;
+  height: 241.83px;
+  border: 1px solid #FF900E;
+  border-radius: 8px;
+  transform: rotate(360deg);
+  margin-right: 124px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  
+}
+.number{
+  font-weight: 600;
+  font-size: 45px;
+  color: #424242;
+}
+.icon-des{
+  font-weight: 600;
+  font-size: 20px;
+  color: #727272;
+}
+.foooter-lower-sec{
+  margin-top: 180px;
+}
+.footer-lower-title{
+ text-align: center;
+ font-weight: 700;
+ font-size: 45px;
+ color: #131313;
+ margin-bottom: 24px;
+}
+.footer-lower-des{
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
+  margin-bottom: 50px;
 
+}
+.sponsors{
+  
+}
+.sponsors img{
+  margin-right: 150px;
+  margin-bottom: 130px;
+ filter: grayscale(10);
+}
+.sponsors img:hover{
+  filter: none;
+  background-color: #0b44d4;
+} 
+.footer-bootom{
+  background: #FFF4E7;
+  border-radius: 8px;
+  width: 1440px;
+  height: 80px;
+  margin-bottom: 216px;
+
+}
+.footer-bootom-des{
+  font-weight: 400;
+  font-size: 20px;
+  color: #424242;
+  text-align: center;
+  line-height: 80px;
+}
  
 
  @media screen and (max-width: 768px) {
@@ -264,10 +335,52 @@ Footer section style
     height: 60vh; 
   }
   .experience-time{
-    
     font-size: 7px;
   }
   .bottom-btn{
     width: 100%;
+  }
+  .time-bold{
+    font-size: 20px;
+  }
+  .icons{
+    margin-left: 30px;
+    flex-direction: column;
+  }
+  .footer{
+    margin-top: 230px;
+    margin-left: 120px;
+    width: 100%;
+  }
+  .footer-upper-sec{
+    width: 100%;
+    margin-left: -100px;
+  }
+  .footer-lower-title{
+   margin-left: -220px ;
+  }
+  .footer-lower-des{
+    margin-left: -200px; 
+    font-size: 3vw;
+  }
+  .footer-bootom{
+    background: #FFF4E7;
+    border-radius: 8px;
+    width: 600px;
+    height: 80px;
+    margin-bottom: 150px;
+    margin-left: -120px;
+  
+  }
+  .footer-bootom-des{
+    font-weight: 100;
+    font-size: 15px;
+    
+    color: #ff0505;
+    text-align: center;
+    line-height: 80px;
+  }
+  *{
+    width: -webkit-fill-available;
   }
 }
