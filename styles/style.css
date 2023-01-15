@@ -384,7 +384,7 @@ Extra Part style
   
 }
  
- @media screen  and (min-width: 576px) {
+ @media screen  and (max-width: 768px) {
   ul{
    position: fixed;
    width: 100%;
