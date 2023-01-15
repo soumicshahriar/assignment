@@ -381,10 +381,9 @@ Extra Part style
   50%{margin-left: 490px;margin-top: 30px;}
   75%{margin-left: 250px;margin-top: 252px}
   100%{margin-left: 0px;margin-top: 30px;}
-  
 }
  
- @media screen  and (max-width: 768px) {
+ @media screen  and (max-width: 576px) {
   ul{
    position: fixed;
    width: 100%;
